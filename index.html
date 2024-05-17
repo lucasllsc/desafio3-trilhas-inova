@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html"><i class="fa-solid fa-house-chimney"></i>
+                Home
+            </a>
+            <a class="cabecalho__menu__link" href="habilidades.html"><i class="fa-solid fa-desktop"></i>
+                Habilidades
+            </a>
+            <a class="cabecalho__menu__link" href="projetos.html"><i class="fa-regular fa-heart"></i>
+                Projetos
+            </a>
+        </nav>
+
+        <button class="button__menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="cabecalho__mobile invisible">
+            <ul class="menu__list">
+                <li class="cabecalho__menu__item">
+                    <a class="cabecalho__menu__link" href="index.html"><i class="fa-solid fa-house-chimney"></i>
+                        Home
+                    </a>        
+                </li>
+                <li class="cabecalho__menu__item">
+                    <a class="cabecalho__menu__link" href="habilidades.html"><i class="fa-solid fa-desktop"></i>
+                        Habilidades
+                    </a>    
+                </li>
+                <li class="cabecalho__menu__item">
+                    <a class="cabecalho__menu__link" href="projetos.html"><i class="fa-regular fa-heart"></i>
+                        Projetos
+                    </a>       
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo" id="nome-autor"></h1>            
+            <p class="apresentacao__conteudo__texto">Olá! Sou o Lucas Campos! Desenvolvedor
+            Front-end com especialidade em JavaScript, HTML e
+            CSS. Estou em constante aprendizado, aperfeiçoando todos os dias minhas habilidades!</p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao__links__navegacao" href="https://github.com/lucasllsc" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    Github
+                </a>    
+                
+                <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/lucas-campos-798333268" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    linkedin
+                </a>
+            </div>
+        </section>
+        <div class="linha_borda">
+            <img class="apresentacao__imagem" src="./assets/foto_perfil.png" alt="Foto de Lucas Campos">
+        </div>
+        
+    </main>
+    <footer class="rodape">
+        <img src="./assets/Logo_Alura_Include.svg">
+        <p>Desenvolvido por Lucas Campos.</p>
+    </footer>
+
+    <script src="js/menuMobile.js"></script>
+    <script src="js/digitacaoNome.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html"><i class="fa-solid fa-house-chimney"></i>
+                Home
+            </a>
+            <a class="cabecalho__menu__link" href="habilidades.html"><i class="fa-solid fa-desktop"></i>
+                Habilidades
+            </a>
+            <a class="cabecalho__menu__link" href="projetos.html"><i class="fa-regular fa-heart"></i>
+                Projetos
+            </a>
+        </nav>
+
+        <button class="button__menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <nav class="cabecalho__mobile invisible">
+            <ul class="menu__list">
+                <li class="cabecalho__menu__item">
+                    <a class="cabecalho__menu__link" href="index.html"><i class="fa-solid fa-house-chimney"></i>
+                        Home
+                    </a>        
+                </li>
+                <li class="cabecalho__menu__item">
+                    <a class="cabecalho__menu__link" href="habilidades.html"><i class="fa-solid fa-desktop"></i>
+                        Habilidades
+                    </a>    
+                </li>
+                <li class="cabecalho__menu__item">
+                    <a class="cabecalho__menu__link" href="projetos.html"><i class="fa-regular fa-heart"></i>
+                        Projetos
+                    </a>       
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="projetos">
+        <section class="projetos__conteudo">
+            <h1 class="projetos__conteudo__titulo">Meus <strong 
+                class="titulo-destaque">Projetos</strong></h1>
+            <p class="projetos__conteudo__texto">Acredito que a melhor maneira de consolidar o conhecimento é por 
+                meio da prática. Como diz o ditado: "A prática leva à perfeição". Confira abaixo alguns dos projetos 
+                que desenvolvi ao longo da minha jornada como desenvolvedor Front-End:
+            </p>
+        </section>
+        <section class="projetos__lista">
+            <div class="linhaBordaProjetos">
+                <a href="https://desafio2-trilhas-inova.vercel.app/" target="_blank">
+                    <img class="projetos__imagem" src="./assets/projetos/desafio2.png" alt="Foto do projeto">
+                </a>
+            </div>
+            <div class="linhaBordaProjetos">
+                <a href="https://robotron2000-alura-xi.vercel.app/" target="_blank">
+                    <img class="projetos__imagem" src="./assets/projetos/robotron.png" alt="Foto do projeto">
+                </a>
+            </div>
+            <div class="linhaBordaProjetos">
+                <a href="https://jogo-six-weld-64.vercel.app/" target="_blank">
+                    <img class="projetos__imagem" src="./assets/projetos/numSecreto.png" alt="Foto do projeto">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img src="./assets/Logo_Alura_Include.svg">
+        <p>Desenvolvido por Lucas Campos.</p>
+    </footer>
+
+    <script src="js/menuMobile.js"></script>
+</body>
+
+</html>
