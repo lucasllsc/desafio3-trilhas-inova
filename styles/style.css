@@ -26,18 +26,20 @@ body {
     padding: 2% 0%;
     position: relative;
 }
+
 .cabecalho__menu {
     display: flex;
     justify-content: center;
     gap: 4rem;
 }
+
 .cabecalho__menu__link, i {
     font-family: var(--fonte-primaria);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .cabecalho__menu__link:hover {
@@ -76,17 +78,15 @@ body {
     gap: 2.5rem;
 }
 
-.apresentacao__conteudo__titulo {
-    color: var(--cor-terciaria);
-}
-
 .apresentacao__conteudo__titulo, .projetos__conteudo__titulo, .habilidades__conteudo__titulo{
+    color: var(--cor-secundaria);
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
 .titulo-destaque {
     color: var(--cor-terciaria);
+    
 }
 
 #nome-autor::after {
