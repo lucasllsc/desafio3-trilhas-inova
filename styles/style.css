@@ -149,17 +149,17 @@ body {
 }
 
 .linha_borda {
-    width: 25rem;
-    height: 25rem;
+    width: 30vw;
+    height: 30vw;
     border: 0.2rem solid var(--cor-terciaria);
     border-radius: 1rem;
 }
 
 .apresentacao__imagem {
-    width: 25rem;
-    height: 25rem;
+    width: 30vw;
+    height: 30vw;
     border-radius: 1rem;
-    position: absolute;
+    position: relative;
     translate: -1rem -1rem;
 }
 
@@ -175,17 +175,17 @@ body {
     gap: 2.5rem;
 }
 
-.projetos__lista, .habilidades__lista {
+.habilidades__lista {
     display: flex;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 3.125rem;
+    gap: 3rem;
 }
 
-.linhaBordaProjetos, .linhaBordaHabilidades {
-    width: 20rem;
-    height: 12rem;
+.linhaBordaHabilidades {
+    width: 23vw;
+    height: 23vh;
     border: 0.2rem solid var(--cor-terciaria);
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.5rem 0.06rem var(--cor-terciaria);
@@ -198,12 +198,62 @@ body {
     transform: scale(1.1);
 }
 
-.projetos__imagem, .habilidades__imagem {
-    width: 20rem;
-    height: 12rem;
+.habilidades__imagem {
+    width: 23vw;
+    height: 23vh;
     border-radius: 1rem;
-    position: absolute;
+    position: relative;
     translate: -1rem -1rem;
+}
+
+.projetos__lista{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.projetos__lista__descricao {
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 2rem;
+}
+
+.linhaBordaProjetos {
+    position: relative;
+    width: 25vw;
+    height: 25vh;
+    border: 0.2rem solid var(--cor-terciaria);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.06rem var(--cor-terciaria);
+
+}
+
+.projetos__imagem{
+    width: 25vw;
+    height: 25vh;
+    border-radius: 1rem;
+    position: relative;
+    translate: -1rem -1rem;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.descricao__titulo-projeto {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.descricao__texto-projeto {
+    text-align: justify;
 }
 
 .rodape {
@@ -235,6 +285,12 @@ body {
         display: none;
     }
 
+    .button__menu {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid var(--cor-terciaria);
+    }
+    
     .cabecalho__mobile {
         display: flex;
         flex-direction: column;
@@ -269,16 +325,6 @@ body {
         margin-bottom: 0;
     }
 
-    .button__menu {
-        display: flex;
-        width: 100%;
-        border-bottom: 1px solid var(--cor-terciaria);
-    }
-
-    .habilidades__lista, .projetos__lista {
-        justify-content: center;
-    }
-
     .apresentacao {
         flex-direction: column-reverse;
         padding: 5%;
@@ -287,4 +333,32 @@ body {
     .apresentacao__conteudo {
         width: auto;
     }
+
+    .habilidades {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .habilidades__lista, .projetos__lista {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .habilidades__lista, .projetos__lista__descricao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projetos__lista__descricao {
+        flex-direction: column-reverse;
+    }
+    
+    .linhaBordaHabilidades, .habilidades__imagem, .linhaBordaProjetos, .projetos__imagem {
+        max-width: 100%;
+        width: 50vw;
+        height: auto;
+    }
+
 }
