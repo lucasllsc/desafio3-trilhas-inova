@@ -43,6 +43,8 @@ body {
 .cabecalho__menu__link:hover {
     border-bottom: 0.2rem solid var(--cor-terciaria);
     margin-bottom: 0.2rem;
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
 .cabecalho__mobile {
