@@ -7,3 +7,5 @@
   <li>CSS</li>
   <li>JavaScript</li>
 </ul>
+<p>Feito por: Lucas Campos</p>
+<p>Linkedin: www.linkedin.com/in/lucas-campos-798333268</p>
